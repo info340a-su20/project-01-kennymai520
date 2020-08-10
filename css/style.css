@@ -39,22 +39,17 @@ h1 {
   font-size: 3rem;
   text-align:LEFT;
 }
-
 .borderss{
   border: solid;
 }
-
 #latest-update-title{
   margin-left: 10px;
 }
-
-
 .intro {
   padding-top: 5px;
   padding-left: 2rem;
   font-size: 1.2rem;
 }
-
 
 .heading {
   text-decoration: none;
@@ -95,7 +90,7 @@ form.searchBox button {
 form.searchBox button:hover {
     background: #b7a57a;
 }
-  
+
   /* Clear floats */
 form.searchBox::after {
     content: "";
@@ -143,7 +138,7 @@ form.searchBox::after {
   justify-content: center;
 }
 
-.resources_column {  
+.resources_column {
   margin: 1rem;
   flex: 0 0 250px;
   position: relative;
@@ -166,7 +161,6 @@ form.searchBox::after {
   position: relative;
   width: 100%;
 }
-
 
 .overlay {
   position: absolute;
@@ -331,7 +325,6 @@ form.searchBox::after {
   }
 }
 
-
 @media (min-width: 1050px) {
   .latest-Update-row {
     display: flex;
@@ -347,4 +340,11 @@ form.searchBox::after {
   .news-section {
     margin: 0 200px;
   }
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+.dropdown-toggle {
+  color: #818181 !important;
 }
