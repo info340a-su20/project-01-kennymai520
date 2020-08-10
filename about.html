@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Helen Zhao, Kenny Mai">
+    <meta name="description" content="CovidInfo provides a platform where COVID-19 related information is shared and conveyed to the public in a manner that is efficient, transparent, and systematic.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COVID-19 News Update</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/about.css">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+        <a class="navbar-brand" href="#"><div class="logo" aria-hidden="true">&nbsp;</div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link menu-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle dropdown-toggle-split menu-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Health Services</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <cite><a class="dropdown-item" href="https://cvshealth.com/covid-19/testing-information-locations">Testing Locations</a></cite>
+                      <cite><a class="dropdown-item" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Self-Testing</a></cite>
+                      <cite><a class="dropdown-item" href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Coronavirus Map</a></cite>
+                      <cite><a class="dropdown-item" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to Protect Yourself</a></cite>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item "><a href="index.html#headline" class="nav-link menu-link">Today's Headlines</a></li>
+            <li class="nav-item"><a href="index.html#globalNews" class="nav-link menu-link">Global News</a></li>
+            <li class="nav-item"><a href="index.html#vaccine" class="nav-link menu-link">Vaccine Updates</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link menu-link">About Us</a></li>
+          </ul>
+        </div>
+        <form class="searchBox" role="search" action="action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <video autoplay loop muted class="center" height="500">
+        <source id="video-source" src="img/about.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+      <h1 class="about_us"> About Us </h1>
+      <p>The number of coronavirus cases in the United States has continued to grow
+          exponentially in the past few months, topping the chart globally. Abiding by
+          the CDC guidelines, most people are wearing face masks, keeping their social
+          distances, and restaurants along with other entertainment facilities have
+          delayed opening. However, the nation’s cases are still soaring. As members of
+          the community, we want to address this concern by bringing in some measures
+          other countries have attempted to efficiently “flatten the curve.” The result of our research and gathering multiple sources of information -- CovidInfo.</p> 
+      <h2> Meet Our Team </h2>
+      <div class="team_container">
+        <div class="team_img">
+          <img src="img/helen.jpg" alt="a picture of Helen" width="235" height="200">
+        </div>
+        <div class="team_intro">
+          <p>Helen Zhao <br> Class of 2023</p>
+        </div>
+      </div>
+
+      <div class="team_container">
+        <div class="team_img">
+          <img src="img/kenny.jpg" alt="a picture of Kenny" width="235" height="200">
+        </div>
+        <div class="team_intro">
+          <p>Kenny Mai <br> Class of 2022</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
