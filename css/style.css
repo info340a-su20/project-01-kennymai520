@@ -229,16 +229,13 @@ text-decoration: none;
   border-color: grey;
   border-width: thin;
 }
+
 .submitbtn {
   background-color: #b7a57a;
   border-color: #b7a57a;
   color: white;
-  height: 30px;
-  width: 60px;
-  float: right;
-  margin-right: .5rem;
-  margin-bottom: .8rem;
 }
+
 .email_update_content {
   margin: .7rem;
 }

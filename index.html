@@ -92,12 +92,12 @@
                 </div>
               </div>
             </div>
-            <form class="email_update">
+            <form class="email_update" id="email_form">
               <div class="email_update_content">
-                <p><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Get Email Updates </p>
+                <p><i class="fas fa-envelope" aria-label="email"></i>&nbsp;&nbsp;&nbsp;Get Email Updates </p>
                 <label for="email">To receive email updates about COVID-19, enter your email address:</label><br><br>
                 <input type="email" id="email" name="email" placeholder="Email Address" class="email_input"><br><br>
-                <input type="submit" value="submit" class="submitbtn">
+                <button type="submit" form="email_form" value="Submit" aria-label="send" class="submitbtn">Submit</button>
               </div>
             </form>
 
