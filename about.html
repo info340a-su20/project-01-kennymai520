@@ -17,7 +17,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <a class="navbar-brand" href="#"><div class="logo" aria-hidden="true">&nbsp;</div></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
             </li>
             <li class="nav-item">
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle dropdown-toggle-split menu-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Health Services</button>
+                    <button class="btn dropdown-toggle dropdown-toggle-split menu-link no-padding-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Health Services</button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                       <cite><a class="dropdown-item" href="https://cvshealth.com/covid-19/testing-information-locations">Testing Locations</a></cite>
                       <cite><a class="dropdown-item" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Self-Testing</a></cite>
@@ -44,45 +44,49 @@
             <li class="nav-item"><a href="index.html#vaccine" class="nav-link menu-link">Vaccine Updates</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link menu-link">About Us</a></li>
           </ul>
+          <form class="searchBox" role="search" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
         </div>
-        <form class="searchBox" role="search" action="action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
       </nav>
     </header>
     <main>
-      <video autoplay loop muted class="center">
-        <source id="video-source" src="img/about.mp4" type="video/mp4">
-      </video>
+
+      <div class="hide">
+        <video autoplay loop muted class="center">
+          <source src="img/about.mp4" type="video/mp4">
+        </video>
+      </div>
+
       <div class="content">
-      <h1 class="about_us"> About Us </h1>
-      <p>The number of coronavirus cases in the United States has continued to grow
+        <h1> About Us </h1>
+        <p>The number of coronavirus cases in the United States has continued to grow
           exponentially in the past few months, topping the chart globally. Abiding by
           the CDC guidelines, most people are wearing face masks, keeping their social
           distances, and restaurants along with other entertainment facilities have
           delayed opening. However, the nation’s cases are still soaring. As members of
           the community, we want to address this concern by bringing in some measures
           other countries have attempted to efficiently “flatten the curve.” The result of our research and gathering multiple sources of information -- CovidInfo.</p>
-      <h2> Meet Our Team </h2>
-      <div class="team_container">
-        <div class="team_img">
-          <img class="team_pic" src="img/helen.jpg" alt="a picture of Helen">
+        <h2> Meet Our Team </h2>
+        <div class="team_container">
+          <div class="team_img">
+            <img class="team_pic" src="img/helen.jpg" alt="a picture of Helen">
+          </div>
+          <div class="team_intro">
+            <p>Helen Zhao <br> Class of 2023</p>
+          </div>
         </div>
-        <div class="team_intro">
-          <p>Helen Zhao <br> Class of 2023</p>
-        </div>
-      </div>
 
-      <div class="team_container">
-        <div class="team_img">
-          <img class="team_pic" src="img/kenny.jpg" alt="a picture of Kenny">
-        </div>
-        <div class="team_intro">
-          <p>Kenny Mai <br> Class of 2022</p>
+        <div class="team_container">
+          <div class="team_img">
+            <img class="team_pic" src="img/kenny.jpg" alt="a picture of Kenny">
+          </div>
+          <div class="team_intro">
+            <p>Kenny Mai <br> Class of 2022</p>
+          </div>
         </div>
       </div>
-    </div>
     </main>
   </body>
 </html>

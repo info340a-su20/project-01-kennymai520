@@ -5,6 +5,10 @@
   color: white;
 }
 
+.no-padding-left {
+  padding-left: 0;
+}
+
 .menu-link:active, .menu-link:hover, .menu-link:focus, .dropbtn:active, .dropbtn:hover, .dropbtn:focus {
   color: #b7a57a;
   border-bottom-color: #b7a57a;
@@ -49,7 +53,7 @@ form.searchBox::after {
 }
 
 .logo {
-  background-image: url('../logo10.jpg');
+  background-image: url('../logo/logo10.jpg');
   background-repeat: no-repeat;
   background-position: left;
   padding-left: 1em;
@@ -77,24 +81,13 @@ img {
   margin-left: 3.0rem;
   margin-top: 3.0rem;
 }
+
 .content {
-  margin: 7rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
   line-height: 25px;
 }
-.about_us {
-  margin-top: -9rem;
-}
 
-@media (max-width: 750px) {
-  video {
-    display: none;
-  }
-
-  #video-source {
-    display: none;
-
-  }
-}
 .bg-secondary {
     background-color: black !important;
 }
@@ -107,4 +100,32 @@ img {
 }
 video {
   height: 500px;
+}
+
+
+@media (max-width: 750px) {
+  .hide {
+    display: none;
+
+    /*
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    */
+  }
+  .content {
+    margin: 1rem;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  form.searchBox {
+    width: 200px;
+  }
+
+}
+
+.my-border {
+  border: solid 5px red;
 }

@@ -15,11 +15,10 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
       <link rel="stylesheet" href="css/style.css">
-
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand " href="#"><div class="logo" aria-hidden="true">&nbsp;</div></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -31,7 +30,7 @@
             </li>
             <li class="nav-item">
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle dropdown-toggle-split menu-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Health Services</button>
+                    <button class="btn dropdown-toggle dropdown-toggle-split menu-link no-padding-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Health Services</button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <cite><a class="dropdown-item" href="https://cvshealth.com/covid-19/testing-information-locations">Testing Locations</a></cite>
                         <cite><a class="dropdown-item" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Self-Testing</a></cite>
@@ -46,11 +45,11 @@
             <li class="nav-item"><a href="#vaccine" class="nav-link menu-link">Vaccine Updates</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link menu-link">About Us</a></li>
           </ul>
+          <form class="searchBox" role="search" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
         </div>
-        <form class="searchBox" role="search" action="action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
       </nav>
     </header>
 
@@ -122,7 +121,7 @@
                 </div>
               </div>
             </div>
-            <cite><a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" class="heading">Track the spread of COVID-19 across the world.</a></cite>
+              <cite><a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" class="heading">Track the spread of COVID-19 across the world.</a></cite>
           </div>
 
           <div class="resources_column">
@@ -140,7 +139,7 @@
                 </div>
               </div>
             </div>
-            <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" class="heading">Things you should know to protect yourself and other from coronavirus.</a>
+              <cite><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" class="heading">Things you should know to protect yourself and other from coronavirus.</a></cite>
           </div>
 
           <div class="resources_column">
@@ -160,7 +159,7 @@
                 </div>
               </div>
             </div>
-            <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" class="heading">What you need to know for symptoms of coronavirus.</a>
+              <cite><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" class="heading">What you need to know for symptoms of coronavirus.</a></cite>
           </div>
 
           <div class="resources_column">
@@ -174,7 +173,7 @@
                 </div>
               </div>
             </div>
-            <a href="https://cvshealth.com/covid-19/testing-information-locations" class="heading">Testing information and locatiosn for COVID-19 near you</a>
+              <cite><a href="https://cvshealth.com/covid-19/testing-information-locations" class="heading">Testing information and locatiosn for COVID-19 near you</a></cite>
           </div>
         </div>
       </div>
@@ -184,65 +183,65 @@
         <h2>Today's Headlines</h2>
         <!--news container-->
         <div class="row news-container">
-            <div class="col-12 no-padding">
-                <p class="news-title">Fox News</p>
-            </div>
-            <div class="col-6 col-md-3">
-                <a class="news-link" href="https://www.foxnews.com/politics/trump-to-sign-coronavirus-relief-executive-orders-saturday-to-help-unemployed-americans-renters">
-                    <img src="img/trump-orders-fox.jpg" class="imgsize" alt="an image of US President Donald Trump signs executive orders extending coronavirus economic relief, during a news conference in Bedminster, New Jersey, on Aug. 8.">
-                </a>
-            </div>
-            <div class="col-6 col-md-8 no-padding">
-                <p class="no-padding" ><time datetime="2020-08-08 12:00">Aug. 8, 2020 at 12:00 pm</time></p>
-                <a class="news-link" href="https://www.foxnews.com/politics/trump-to-sign-coronavirus-relief-executive-orders-saturday-to-help-unemployed-americans-renters">
-                    <h3 class="article-title">Trump orders $400-per-week unemployment payments amid COVID crisis, hits Dems for stonewalling</h3>
-                </a>
-                <p class="no-padding descriptions">President Trump signed four executive actions Saturday aimed at delivering relief to Americans struggling with the economic fallout of the coronavirus pandemic while...</p>
-            </div>
-            <div class="col-12 extra-space"></div>
+          <div class="col-12 no-padding">
+            <p class="news-title">Fox News</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <a class="news-link" href="https://www.foxnews.com/politics/trump-to-sign-coronavirus-relief-executive-orders-saturday-to-help-unemployed-americans-renters">
+              <img src="img/trump-orders-fox.jpg" class="imgsize" alt="an image of US President Donald Trump signs executive orders extending coronavirus economic relief, during a news conference in Bedminster, New Jersey, on Aug. 8.">
+            </a>
+          </div>
+          <div class="col-6 col-md-8 no-padding">
+            <p class="no-padding" ><time datetime="2020-08-08 12:00">Aug. 8, 2020 at 12:00 pm</time></p>
+            <cite><a class="news-link" href="https://www.foxnews.com/politics/trump-to-sign-coronavirus-relief-executive-orders-saturday-to-help-unemployed-americans-renters">
+              <h3 class="article-title">Trump orders $400-per-week unemployment payments amid COVID crisis, hits Dems for stonewalling</h3>
+            </a></cite>
+            <p class="no-padding descriptions">President Trump signed four executive actions Saturday aimed at delivering relief to Americans struggling with the economic fallout of the coronavirus pandemic while...</p>
+          </div>
+          <div class="col-12 extra-space"></div>
         </div>
 
         <!--news container-->
         <div class="row news-container">
-            <div class="col-12 no-padding">
-                <p class="news-title"> The Seattle Times</p>
-            </div>
-            <div class="col-6 col-md-3">
-                <a class="news-link" href="https://www.seattletimes.com/business/international-trade/an-inside-look-at-seafarers-trapped-aboard-ships-amid-covid-19-restrictions/">
-                    <img src="img/news2.jpg" class="imgsize" alt="Crew members from the Bellatrix container ship, registered in Liberia, as it sat docked outside a grain facility in Tacoma last week. Severe coronavirus restrictions imposed by global
+          <div class="col-12 no-padding">
+            <p class="news-title"> The Seattle Times</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <cite><a class="news-link" href="https://www.seattletimes.com/business/international-trade/an-inside-look-at-seafarers-trapped-aboard-ships-amid-covid-19-restrictions/">
+                <img src="img/news2.jpg" class="imgsize" alt="Crew members from the Bellatrix container ship, registered in Liberia, as it sat docked outside a grain facility in Tacoma last week. Severe coronavirus restrictions imposed by global
                     governments have kept some crew members trapped aboard the ship for nearly a year.">
-                </a>
-            </div>
-            <div class="col-6 col-md-8 no-padding">
-                <p class="no-padding"><time datetime="2020-08-08 18:01">Aug. 8, 2020 at 6:01 am</time></p>
-                <a class="news-link" href="https://www.seattletimes.com/business/international-trade/an-inside-look-at-seafarers-trapped-aboard-ships-amid-covid-19-restrictions/">
-                    <h3>‘They’d just given up’ — an inside look at seafarers trapped aboard ships amid COVID-19 restrictions</h3>
-                </a>
-                <p class="no-padding descriptions">Seafarers around the country are stranded aboard ships, wondering whether they'll ever get home....</p>
-            </div>
-            <div class="col-12 extra-space"></div>
+            </a></cite>
+          </div>
+          <div class="col-6 col-md-8 no-padding">
+            <p class="no-padding"><time datetime="2020-08-08 18:01">Aug. 8, 2020 at 6:01 am</time></p>
+            <cite><a class="news-link" href="https://www.seattletimes.com/business/international-trade/an-inside-look-at-seafarers-trapped-aboard-ships-amid-covid-19-restrictions/">
+              <h3>‘They’d just given up’ — an inside look at seafarers trapped aboard ships amid COVID-19 restrictions</h3>
+            </a></cite>
+            <p class="no-padding descriptions">Seafarers around the country are stranded aboard ships, wondering whether they'll ever get home....</p>
+          </div>
+          <div class="col-12 extra-space"></div>
         </div>
 
         <!--news container-->
         <div class="row news-container">
-            <div class="col-12 no-padding">
-                <p class="news-title">The Seattle Times</p>
-            </div>
-            <div class="col-6 col-md-3">
-                <a class="news-link" href="https://www.seattletimes.com/seattle-news/data/covid-19-positivity-rates-drop-in-king-county-but-hot-spots-to-south-still-burn-brightly/">
-                    <img src="img/COVID-19_positivity.jpg" class="imgsize" alt="an image of Brenda Medero,
+          <div class="col-12 no-padding">
+            <p class="news-title">The Seattle Times</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <cite><a class="news-link" href="https://www.seattletimes.com/seattle-news/data/covid-19-positivity-rates-drop-in-king-county-but-hot-spots-to-south-still-burn-brightly/">
+                <img src="img/COVID-19_positivity.jpg" class="imgsize" alt="an image of Brenda Medero,
                     a medical assistant supervisor, reaches inside a car last week to give a COVID-19 test to a driver at Sea Mar Community Health Center in Federal Way.">
-                </a>
-            </div>
-            <div class="col-6 col-md-8 no-padding">
-                <p class="no-padding" ><time datetime="2020-08-04 06:00">Aug. 4, 2020 at 6:00 am</time></p>
-                <a class="news-link" href="https://www.seattletimes.com/seattle-news/data/covid-19-positivity-rates-drop-in-king-county-but-hot-spots-to-south-still-burn-brightly/">
-                    <h3 class="article-title">COVID-19 positivity rates drop in King County, but hot spots to south still burn brightly</h3>
-                </a>
-                <p class="no-padding descriptions">In my previous column, I looked at cumulative data from Public Health — Seattle & King County, going back to the first days of the pandemic here.
+            </a></cite>
+          </div>
+          <div class="col-6 col-md-8 no-padding">
+            <p class="no-padding" ><time datetime="2020-08-04 06:00">Aug. 4, 2020 at 6:00 am</time></p>
+            <cite><a class="news-link" href="https://www.seattletimes.com/seattle-news/data/covid-19-positivity-rates-drop-in-king-county-but-hot-spots-to-south-still-burn-brightly/">
+              <h3 class="article-title">COVID-19 positivity rates drop in King County, but hot spots to south still burn brightly</h3>
+            </a></cite>
+            <p class="no-padding descriptions">In my previous column, I looked at cumulative data from Public Health — Seattle & King County, going back to the first days of the pandemic here.
                     It showed that more than 5% of the tests for COVID-19 came back positive...</p>
-            </div>
-            <div class="col-12 extra-space"></div>
+          </div>
+          <div class="col-12 extra-space"></div>
         </div>
       </section>
 
@@ -254,17 +253,17 @@
               <p class="news-title">CBC</p>
           </div>
           <div class="col-6 col-md-3 my-column">
-              <a class="news-link" href="https://www.cbc.ca/news/canada/british-columbia/update-august-6-1.5677163">
-                  <img src="img/global_card1.jpg" class="imgsize" alt="an image of Provincial Health Officer Dr. Bonnie Henry and Health Minister Adrian Dix, pictured in July,
+            <cite><a class="news-link" href="https://www.cbc.ca/news/canada/british-columbia/update-august-6-1.5677163">
+              <img src="img/global_card1.jpg" class="imgsize" alt="an image of Provincial Health Officer Dr. Bonnie Henry and Health Minister Adrian Dix, pictured in July,
                    presented the latest B.C. COVID-19 numbers on Thursday.">
-              </a>
+            </a></cite>
           </div>
           <div class="col-6 col-md-8 no-padding my-column">
-              <p class="no-padding" ><time datetime="2020-08-08 12:00">Aug. 8, 2020 at 12:00 pm</time></p>
-              <a class="news-link" href="https://www.cbc.ca/news/canada/british-columbia/update-august-6-1.5677163">
-                  <h3 class="article-title">B.C.'s active COVID-19 cases double in the past month</h3>
-              </a>
-              <p class="no-padding descriptions">Provincial Health Officer Dr. Bonnie Henry announced 47 new COVID-19 cases in the past 24 hours to bring the total number of cases in the province to 3,881...</p>
+            <p class="no-padding" ><time datetime="2020-08-08 12:00">Aug. 8, 2020 at 12:00 pm</time></p>
+            <cite><a class="news-link" href="https://www.cbc.ca/news/canada/british-columbia/update-august-6-1.5677163">
+              <h3 class="article-title">B.C.'s active COVID-19 cases double in the past month</h3>
+            </a></cite>
+            <p class="no-padding descriptions">Provincial Health Officer Dr. Bonnie Henry announced 47 new COVID-19 cases in the past 24 hours to bring the total number of cases in the province to 3,881...</p>
           </div>
           <div class="col-12 extra-space"></div>
         </div>
@@ -275,16 +274,16 @@
               <p class="news-title">Global News</p>
           </div>
           <div class="col-6 col-md-3">
-              <a class="news-link" href="https://globalnews.ca/news/7256069/coronavirus-africa-cases-1-million/">
-                  <img src="img/global_card3.jpg" class="imgsize" alt="Cemetery workers dig new graves at the Xico cemetery on the outskirts of Mexico City">
-              </a>
+            <cite><a class="news-link" href="https://globalnews.ca/news/7256069/coronavirus-africa-cases-1-million/">
+              <img src="img/global_card3.jpg" class="imgsize" alt="Cemetery workers dig new graves at the Xico cemetery on the outskirts of Mexico City">
+            </a></cite>
           </div>
           <div class="col-6 col-md-8 no-padding">
-              <p class="no-padding" ><time datetime="2020-08-06 18:46">Aug. 6, 2020 at 6:46 pm</time></p>
-              <a class="news-link" href="https://globalnews.ca/news/7256069/coronavirus-africa-cases-1-million/">
-                  <h3 class="article-title">Coronavirus: Africa now over 3M cases, but millions still untested</h3>
-              </a>
-              <p class="no-padding descriptions">Africa’s confirmed coronavirus cases have surpassed one million, but global health experts say the true toll is likely several times higher,
+            <p class="no-padding" ><time datetime="2020-08-06 18:46">Aug. 6, 2020 at 6:46 pm</time></p>
+            <cite><a class="news-link" href="https://globalnews.ca/news/7256069/coronavirus-africa-cases-1-million/">
+              <h3 class="article-title">Coronavirus: Africa now over 3M cases, but millions still untested</h3>
+            </a></cite>
+            <p class="no-padding descriptions">Africa’s confirmed coronavirus cases have surpassed one million, but global health experts say the true toll is likely several times higher,
                  reflecting the gaping lack of testing for the continent’s 1.3 billion people....</p>
           </div>
           <div class="col-12 extra-space"></div>
@@ -293,19 +292,19 @@
         <!--news container-->
         <div class="row news-container">
           <div class="col-12 no-padding">
-              <p class="news-title">Forbes News</p>
+            <p class="news-title">Forbes News</p>
           </div>
           <div class="col-6 col-md-3">
-              <a class="news-link" href="https://www.forbes.com/sites/tamarathiessen/2020/08/05/france-spain-belgium-bans-travel-covid-red-zones-europe/#42099b862acb">
-                  <img src="img/global_card4.jpg" class="imgsize" alt="Cemetery workers dig new graves at the Xico cemetery on the outskirts of Mexico City">
-              </a>
+            <cite><a class="news-link" href="https://www.forbes.com/sites/tamarathiessen/2020/08/05/france-spain-belgium-bans-travel-covid-red-zones-europe/#42099b862acb">
+              <img src="img/global_card4.jpg" class="imgsize" alt="Cemetery workers dig new graves at the Xico cemetery on the outskirts of Mexico City">
+            </a></cite>
           </div>
           <div class="col-6 col-md-8 no-padding">
-              <p class="no-padding" ><time datetime="2020-08-05 10:44">Aug. 5, 2020 at 10:44 am</time></p>
-              <a class="news-link" href="https://www.forbes.com/sites/tamarathiessen/2020/08/05/france-spain-belgium-bans-travel-covid-red-zones-europe/#42099b862acb">
-                  <h3 class="article-title">France, Spain, Switzerland: Belgium Bans Travel To 12 Covid Red Zones Europe</h3>
-              </a>
-              <p class="no-padding descriptions">As Belgium experiences a massive spike in new cases, it’s also banning travel to certain European spots with a worsening corona crisis.</p>
+            <p class="no-padding" ><time datetime="2020-08-05 10:44">Aug. 5, 2020 at 10:44 am</time></p>
+            <cite><a class="news-link" href="https://www.forbes.com/sites/tamarathiessen/2020/08/05/france-spain-belgium-bans-travel-covid-red-zones-europe/#42099b862acb">
+              <h3 class="article-title">France, Spain, Switzerland: Belgium Bans Travel To 12 Covid Red Zones Europe</h3>
+            </a></cite>
+            <p class="no-padding descriptions">As Belgium experiences a massive spike in new cases, it’s also banning travel to certain European spots with a worsening corona crisis.</p>
           </div>
           <div class="col-12 extra-space"></div>
         </div>
@@ -313,19 +312,19 @@
         <!--news container-->
         <div class="row news-container">
           <div class="col-12 no-padding">
-              <p class="news-title">BBC News</p>
+            <p class="news-title">BBC News</p>
           </div>
           <div class="col-6 col-md-3">
-              <a class="news-link" href="https://www.bbc.com/news/world-latin-america-53618808">
-                  <img src="img/global_card2.jpg" class="imgsize" alt="Cemetery workers dig new graves at the Xico cemetery on the outskirts of Mexico City">
-              </a>
+            <cite><a class="news-link" href="https://www.bbc.com/news/world-latin-america-53618808">
+              <img src="img/global_card2.jpg" class="imgsize" alt="Cemetery workers dig new graves at the Xico cemetery on the outskirts of Mexico City">
+            </a></cite>
           </div>
           <div class="col-6 col-md-8 no-padding">
-              <p class="no-padding" ><time datetime="2020-08-01">Aug. 1, 2020</time></p>
-              <a class="news-link" href="https://www.bbc.com/news/world-latin-america-53618808">
-                  <h3 class="article-title">Coronavirus: Mexico's death toll becomes world's third highest</h3>
-              </a>
-              <p class="no-padding descriptions">Mexico has become the country with the third highest death toll with coronavirus, with only the US and Brazil recording greater numbers....</p>
+            <p class="no-padding" ><time datetime="2020-08-01">Aug. 1, 2020</time></p>
+            <cite><a class="news-link" href="https://www.bbc.com/news/world-latin-america-53618808">
+              <h3 class="article-title">Coronavirus: Mexico's death toll becomes world's third highest</h3>
+            </a></cite>
+            <p class="no-padding descriptions">Mexico has become the country with the third highest death toll with coronavirus, with only the US and Brazil recording greater numbers....</p>
           </div>
           <div class="col-12 extra-space"></div>
         </div>
@@ -336,65 +335,65 @@
 
         <!--news container-->
         <div class="row news-container">
-            <div class="col-12 no-padding">
-                <p class="news-title">CNBC</p>
-            </div>
-            <div class="col-6 col-md-3">
-                <a class="news-link" href="https://www.cnbc.com/2020/08/07/coronavirus-vaccine-dr-fauci-says-chances-of-it-being-highly-effective-is-not-great.html">
-                    <img src="img/Dr.Anthony.jpeg" class="imgsize" alt="Director of the National Institute for Allergy and Infectious Diseases Dr. Anthony Fauci testifies before the US Senate Health, Education, Labor, and Pensions Committee hearing to examine COVID-19,
+          <div class="col-12 no-padding">
+            <p class="news-title">CNBC</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <cite><a class="news-link" href="https://www.cnbc.com/2020/08/07/coronavirus-vaccine-dr-fauci-says-chances-of-it-being-highly-effective-is-not-great.html">
+              <img src="img/Dr.Anthony.jpeg" class="imgsize" alt="Director of the National Institute for Allergy and Infectious Diseases Dr. Anthony Fauci testifies before the US Senate Health, Education, Labor, and Pensions Committee hearing to examine COVID-19,
                     “focusing on lessons learned to prepare for the next pandemic”, on Capitol Hill in Washington, DC on June 23, 2020.">
-                </a>
-            </div>
-            <div class="col-6 col-md-8 no-padding">
-                <p class="no-padding" ><time datetime="2020-08-07 13:57">Aug 7, 2020 at 1:57 pm</time></p>
-                <a class="news-link" href="https://www.cnbc.com/2020/08/07/coronavirus-vaccine-dr-fauci-says-chances-of-it-being-highly-effective-is-not-great.html">
-                    <h3 class="article-title">Dr. Anthony Fauci says chance of coronavirus vaccine being highly effective is ‘not great’</h3>
-                </a>
-                <p class="no-padding descriptions">Scientists are hoping for a coronavirus vaccine that is at least 75% effective, but 50% or 60% effective would be acceptable, too,
+            </a></cite>
+          </div>
+          <div class="col-6 col-md-8 no-padding">
+            <p class="no-padding" ><time datetime="2020-08-07 13:57">Aug 7, 2020 at 1:57 pm</time></p>
+            <cite><a class="news-link" href="https://www.cnbc.com/2020/08/07/coronavirus-vaccine-dr-fauci-says-chances-of-it-being-highly-effective-is-not-great.html">
+              <h3 class="article-title">Dr. Anthony Fauci says chance of coronavirus vaccine being highly effective is ‘not great’</h3>
+            </a></cite>
+            <p class="no-padding descriptions">Scientists are hoping for a coronavirus vaccine that is at least 75% effective, but 50% or 60% effective would be acceptable, too,
                     Fauci, director of the National Institute of Allergy and Infectious Diseases...</p>
-            </div>
-            <div class="col-12 extra-space"></div>
+          </div>
+          <div class="col-12 extra-space"></div>
         </div>
 
         <!--news container-->
         <div class="row news-container">
-            <div class="col-12 no-padding">
-                <p class="news-title">CNN</p>
-            </div>
-            <div class="col-6 col-md-3">
-                <a class="news-link" href="https://www.cnn.com/2020/08/07/politics/antibody-treatments-coronavirus-shortage-government/index.html">
-                    <img src="img/promising-covid-19-cnn.jpeg" class="imgsize" alt="Director of the National Institute for Allergy and Infectious Diseases Dr. Anthony Fauci testifies before the US Senate Health, Education, Labor, and Pensions Committee hearing to examine COVID-19,
+          <div class="col-12 no-padding">
+            <p class="news-title">CNN</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <cite><a class="news-link" href="https://www.cnn.com/2020/08/07/politics/antibody-treatments-coronavirus-shortage-government/index.html">
+              <img src="img/promising-covid-19-cnn.jpeg" class="imgsize" alt="Director of the National Institute for Allergy and Infectious Diseases Dr. Anthony Fauci testifies before the US Senate Health, Education, Labor, and Pensions Committee hearing to examine COVID-19,
                     “focusing on lessons learned to prepare for the next pandemic”, on Capitol Hill in Washington, DC on June 23, 2020.">
-                </a>
-            </div>
-            <div class="col-6 col-md-8 no-padding">
-                <p class="no-padding" ><time datetime="2020-08-07 19:21">Aug 7, 2020 at 7:21 pm</time></p>
-                <a class="news-link" href="https://www.cnn.com/2020/08/07/politics/antibody-treatments-coronavirus-shortage-government/index.html">
-                    <h3 class="article-title">Promising Covid-19 treatment offers test run for vaccine distribution</h3>
-                </a>
-                <p class="no-padding descriptions">An antibody treatment designed to protect against coronavirus could be available as early as this fall
+            </a></cite>
+          </div>
+          <div class="col-6 col-md-8 no-padding">
+            <p class="no-padding" ><time datetime="2020-08-07 19:21">Aug 7, 2020 at 7:21 pm</time></p>
+            <cite><a class="news-link" href="https://www.cnn.com/2020/08/07/politics/antibody-treatments-coronavirus-shortage-government/index.html">
+              <h3 class="article-title">Promising Covid-19 treatment offers test run for vaccine distribution</h3>
+            </a></cite>
+            <p class="no-padding descriptions">An antibody treatment designed to protect against coronavirus could be available as early as this fall
                     -- but only for a fraction of the millions of Americans who might benefit from the treatment...</p>
-            </div>
-            <div class="col-12 extra-space"></div>
+          </div>
+          <div class="col-12 extra-space"></div>
         </div>
 
         <!--news container-->
         <div class="row news-container">
-            <div class="col-12 no-padding">
-                <p class="news-title">npr</p>
-            </div>
+          <div class="col-12 no-padding">
+            <p class="news-title">npr</p>
+          </div>
             <div class="col-6 col-md-3">
-                <a class="news-link" href="https://www.npr.org/sections/health-shots/2020/08/06/899869278/prices-for-covid-19-vaccines-are-starting-to-come-into-focus">
-                    <img src="img/prices-covid-19-NPR.jpg" class="imgsize" alt="Director of the National Institute for Allergy and Infectious Diseases Dr. Anthony Fauci testifies before the US Senate Health, Education, Labor, and Pensions Committee hearing to examine COVID-19,
+              <cite><a class="news-link" href="https://www.npr.org/sections/health-shots/2020/08/06/899869278/prices-for-covid-19-vaccines-are-starting-to-come-into-focus">
+                <img src="img/prices-covid-19-NPR.jpg" class="imgsize" alt="Director of the National Institute for Allergy and Infectious Diseases Dr. Anthony Fauci testifies before the US Senate Health, Education, Labor, and Pensions Committee hearing to examine COVID-19,
                     “focusing on lessons learned to prepare for the next pandemic”, on Capitol Hill in Washington, DC on June 23, 2020.">
-                </a>
+              </a></cite>
             </div>
             <div class="col-6 col-md-8 no-padding">
-                <p class="no-padding" ><time datetime="2020-08-06 15:32">August 6, 2020 at 4:32 pm</time></p>
-                <a class="news-link" href="https://www.npr.org/sections/health-shots/2020/08/06/899869278/prices-for-covid-19-vaccines-are-starting-to-come-into-focus">
-                    <h3 class="article-title">Prices For COVID-19 Vaccines Are Starting To Come Into Focus</h3>
-                </a>
-                <p class="no-padding descriptions">AModerna has been working on its vaccine with the National Institute of Allergy and Infectious Diseases, which anticipates spending an additional $410 million on...</p>
+              <p class="no-padding" ><time datetime="2020-08-06 15:32">August 6, 2020 at 4:32 pm</time></p>
+              <cite><a class="news-link" href="https://www.npr.org/sections/health-shots/2020/08/06/899869278/prices-for-covid-19-vaccines-are-starting-to-come-into-focus">
+                <h3 class="article-title">Prices For COVID-19 Vaccines Are Starting To Come Into Focus</h3>
+              </a></cite>
+              <p class="no-padding descriptions">AModerna has been working on its vaccine with the National Institute of Allergy and Infectious Diseases, which anticipates spending an additional $410 million on...</p>
             </div>
             <div class="col-12 extra-space"></div>
         </div>
