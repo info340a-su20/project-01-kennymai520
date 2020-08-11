@@ -67,7 +67,7 @@ h1 {
 
 
 /* Style the search field */
-form.searchBox input[type=text] {
+div.searchBox input[type=text] {
     padding: 10px;
     font-size: 10px;
     border: 1px solid grey;
@@ -77,7 +77,7 @@ form.searchBox input[type=text] {
 }
 
   /* Style the submit button */
-form.searchBox button {
+div.searchBox button {
     float: left;
     width: 20%;
     padding: 10px;
@@ -88,12 +88,12 @@ form.searchBox button {
     cursor: pointer;
 }
 
-form.searchBox button:hover, form.searchBox button:active{
+div.searchBox button:hover, form.searchBox button:active{
     background: #b7a57a;
 }
 
   /* Clear floats */
-form.searchBox::after {
+div.searchBox::after {
     content: "";
     clear: both;
     display: table;
