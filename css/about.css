@@ -130,7 +130,7 @@ video {
 }
 
 @media (max-width: 991px) {
-  form.searchBox {
+  div.searchBox {
     width: 200px;
   }
 

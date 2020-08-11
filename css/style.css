@@ -88,7 +88,7 @@ div.searchBox button {
     cursor: pointer;
 }
 
-div.searchBox button:hover, form.searchBox button:active{
+div.searchBox button:hover, div.searchBox button:active{
     background: #b7a57a;
 }
 
@@ -346,7 +346,7 @@ text-decoration: none;
 }
 
 @media (max-width: 991px) {
-  form.searchBox {
+  div.searchBox {
     width: 200px;
   }
 
