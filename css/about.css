@@ -18,7 +18,6 @@
   border-right: .8rem;
 }
 
-
 /* Style the search field */
 form.searchBox input[type=text] {
   padding: 10px;
@@ -128,4 +127,14 @@ video {
 
 .my-border {
   border: solid 5px red;
+}
+.footer {
+  color: black;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  align-content: center;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 10px;
 }
