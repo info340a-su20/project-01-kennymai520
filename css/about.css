@@ -101,3 +101,10 @@ img {
 .dropdown-toggle {
   color: #818181 !important;
 }
+.team_pic {
+  width: 235px;
+  height: 220px;
+}
+video {
+  height: 500px;
+}

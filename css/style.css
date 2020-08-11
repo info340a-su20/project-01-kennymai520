@@ -53,7 +53,7 @@ h1 {
 
 .heading {
   text-decoration: none;
-  color: black;
+  color: black !important;
   text-decoration-style: none;
 }
 
@@ -307,11 +307,18 @@ form.searchBox::after {
 
 @media (max-width: 576px) {
   .latest-img {
-    width: 97%;
     height: auto;
     text-align: center;
     display: block;
     margin: 0 auto;
+    width: 300px;
+    height: 180px;
+  }
+}
+@media (min-width: 582px) {
+  .latest-img {
+    width: 300px;
+    height: 180px;
   }
 }
 
@@ -322,6 +329,10 @@ form.searchBox::after {
 
   .news-section {
     margin: 0 100px;
+  }
+  .latest-img {
+    width: 900px;
+    height: 330px;
   }
 }
 
@@ -334,11 +345,19 @@ form.searchBox::after {
     align-content: center;
     width: 100%;
   }
+  .latest-img {
+    width: 330px;
+    height: 350px;
+  }
 }
 
 @media (min-width: 1140px) {
   .news-section {
     margin: 0 200px;
+  }
+  .latest-img {
+    width: 430px;
+    height: 300px;
   }
 }
 
@@ -347,4 +366,7 @@ form.searchBox::after {
 }
 .dropdown-toggle {
   color: #818181 !important;
+}
+.sub_link {
+  text-decoration: none;
 }
