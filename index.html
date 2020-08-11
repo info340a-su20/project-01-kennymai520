@@ -46,8 +46,9 @@
             <li class="nav-item"><a href="about.html" class="nav-link menu-link">About Us</a></li>
           </ul>
           <form class="searchBox" role="search" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <label for="search" class="visuallyhidden">Search: </label>
+            <input type="text" id="search" placeholder="Search.." name="search" aria-label="Search">
+            <button type="submit"><i class="fa fa-search" aria-label="Search"></i></button>
           </form>
         </div>
       </nav>
