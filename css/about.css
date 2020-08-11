@@ -40,7 +40,7 @@ div.searchBox button {
   cursor: pointer;
 }
 
-div.searchBox button:hover, div.searchBox button:active{
+div.searchBox button:active{
   background: #b7a57a;
 }
 
