@@ -14,6 +14,9 @@
   border-bottom-style: solid;
   padding-bottom: 0.2rem;
 }
+#dropdownMenuButton {
+  margin-top: 0.05rem;
+}
 
 img {
   background-position: left;
@@ -21,12 +24,12 @@ img {
 }
 
 .logo {
-  background-image: url('../logo/logo10.jpg');
+  background-image: url('../logo/logo.jpg');
   background-repeat: no-repeat;
   background-position: left;
   padding-left: 1em;
-  padding-right: 8.5em;
-  background-size: 110px 35px;
+  padding-right: 2em;
+  background-size: 60px 40px;
   padding-top: .3em;
 }
 
@@ -42,7 +45,7 @@ h1 {
 .borderss{
   border: solid;
 }
-#latest-update-title{
+#latest-update-title {
   margin-left: 10px;
 }
 .intro {
