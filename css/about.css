@@ -9,13 +9,16 @@
   padding-left: 0;
 }
 
-.menu-link:active, .menu-link:hover, .menu-link:focus, .dropbtn:active, .dropbtn:hover, .dropbtn:focus {
+.menu-link:active, .menu-link:hover, .menu-link:focus, #dropdownMenuButton:active, #dropdownMenuButton:hover, #dropdownMenuButton:focus {
   color: #b7a57a;
   border-bottom-color: #b7a57a;
   border-bottom-width: .3rem;
   border-bottom-style: solid;
-  border-left: .8rem;
-  border-right: .8rem;
+  padding-bottom: 0.2rem;
+}
+
+#dropdownMenuButton {
+  margin-top: 0.05rem;
 }
 
 /* Style the search field */
@@ -105,7 +108,7 @@ img {
   color: #818181 !important;
 }
 .team_pic {
-  width: 235px;
+  width: 250px;
   height: 220px;
 }
 video {
