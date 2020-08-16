@@ -7,15 +7,16 @@
   color: white;
 }
 
+#dropdownMenuButton {
+  margin-top: 0.05rem;
+}
+
 .menu-link:active, .menu-link:hover, .menu-link:focus, #dropdownMenuButton:active, #dropdownMenuButton:hover, #dropdownMenuButton:focus {
   color: #b7a57a;
   border-bottom-color: #b7a57a;
   border-bottom-width: .3rem;
   border-bottom-style: solid;
   padding-bottom: 0.2rem;
-}
-#dropdownMenuButton {
-  margin-top: 0.05rem;
 }
 
 img {
