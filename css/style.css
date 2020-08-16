@@ -57,6 +57,12 @@ h1 {
   text-decoration-style: none;
 }
 
+.resource_heading {
+  color: black !important;
+  text-decoration: none !important;
+  display: inline-flex;
+}
+
 .container_updates {
   height: 100%;
 }
