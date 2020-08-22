@@ -4,11 +4,7 @@ let givenState = 'Alabama';
 let givenRange = '7';
 let givenType = 'Confirmed';
 
-<<<<<<< HEAD
-let URL =  "https://thevirustracker.com/free-api?countryTimeline=US";
-=======
->>>>>>> master
-let URL2 = "https://covidtracking.com/api/us"
+let URL2 = "https://covidtracking.com/api/us";
 
 fetch(URL2)
 .then(function(response) {
@@ -18,7 +14,7 @@ fetch(URL2)
   time.textContent = 'Updated August ' + new Date(data[0].dateChecked);
   document.querySelector('#total_cases').textContent = numberWithCommas(data[0].positive);
   document.querySelector('#total_death').textContent = numberWithCommas(data[0].death);
-  console.log(data);
+  // console.log(data);
 });
 
 // formattting with commas on thousand for numbers.
@@ -48,27 +44,48 @@ function fetchData(stateName, typeName, range) {
     let dataPoints = [];
     filterRange.map((oneDay) => {
       let components = {
-        x: new Date(oneDay.Date),
-        y: parseInt(oneDay[typeName])
+        date: new Date(oneDay.Date),
+        count: parseInt(oneDay[typeName])
       }
       dataPoints.push(components);
     });
     window.onload(dataPoints, givenState);
-    console.log(dataPoints);
+    // console.log(dataPoints);
   })
 }
 
+// window.onload = function (inputs, statename) {
+//   let chart = new CanvasJS.Chart("chartContainer", {
+//     animationEnabled: true,
+//     theme: "light2",
+//     title:{
+//       text: "Daily Updates in " + statename
+//     },
+//     data: [{
+//       type: "line",
+//       indexLabelFontSize: 16,
+//       dataPoints: inputs
+//     }]
+//   });
+//   chart.render();
+// }
+
 window.onload = function (inputs, statename) {
+  let datas = [];
+  for (let i = 0; i < inputs.length; i++) {
+    datas.push({x: inputs[i].date, y: inputs[i].count});
+  }
+  // console.log(datas);
   let chart = new CanvasJS.Chart("chartContainer", {
     animationEnabled: true,
     theme: "light2",
     title:{
       text: "Daily Updates in " + statename
     },
-    data: [{
+    data: [{        
       type: "line",
       indexLabelFontSize: 16,
-      dataPoints: inputs
+      dataPoints: datas
     }]
   });
   chart.render();
