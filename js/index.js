@@ -1,13 +1,12 @@
-'use strict'
+'use strict';
 
 let givenState = 'Alabama';
 let givenRange = '7';
 let givenType = 'Confirmed';
 
-let URL =  "https://thevirustracker.com/free-api?countryTimeline=US";
 let URL2 = "http://covidtracking.com/api/us"
 
-let result = fetch(URL2)
+fetch(URL2)
 .then(function(response) {
   return response.json();
 }).then (function(data) {
@@ -21,7 +20,7 @@ let result = fetch(URL2)
 // formattting with commas on thousand for numbers.
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-};
+}
 
 
 let form = document.querySelector('#email_form');
@@ -62,7 +61,7 @@ window.onload = function (inputs, statename) {
     title:{
       text: "Daily Updates in " + statename
     },
-    data: [{        
+    data: [{
       type: "line",
       indexLabelFontSize: 16,
       dataPoints: inputs
