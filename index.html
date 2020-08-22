@@ -11,7 +11,9 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      
+
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script type="text/javascript" src="canvasjs.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
@@ -88,7 +90,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="latest-Update-container no_marigin">
         <div class="latest-Update-row border">
           <div class="graph border latest-Update-column">
@@ -113,7 +115,7 @@
                 <option value="14">2 weeks</option>
               </select>
             </div>
-            <div id="chartContainer" style="height: 350px; width: 100%;"></div>
+            <div id="chartContainer"></div>
           </div>
 
           <div class="latest-Update-column">
@@ -143,7 +145,7 @@
           </div>
         </div>
       </div>
-  
+      
       <div class="keyResources_container">
         <h2>Resources and Information</h2>
         <div class="resources-row">

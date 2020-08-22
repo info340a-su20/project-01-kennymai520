@@ -363,7 +363,7 @@ text-decoration: none;
   .margin {
     margin-right: 0.5rem;
   }
-  
+
   .margin-left {
     margin-left: 1rem;
   }
@@ -412,4 +412,9 @@ text-decoration: none;
 
 .padding-left {
   padding-left: 0;
+}
+
+#chartContainer {
+  height: 350px;
+  width: 100%;
 }
