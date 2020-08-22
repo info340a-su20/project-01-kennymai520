@@ -11,10 +11,19 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+      <!-- Polyfill for fetch -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js" integrity="sha512-IsoGB9P1Kjw962zrslxT91OfoKkAnlBfQDdh5HwFvOxwJ8xGV6MuDeAli4TkEMiUqhJVkvpxJBsIS14bSERgxA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.2.8/es6-promise.min.js" integrity="sha512-JMK7ImCd/9VxQM7FWvAT3njqo5iGKkWcOax6Bwzuq48xxFd7/jekKcgN+59ZRwBoEpZvv6Jkwh3fDGrBVWX5vA==" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+      <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
       <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -77,39 +86,67 @@
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+      
+      <div class="latest-Update-container no_marigin">
+        <div class="latest-Update-row border">
+          <div class="graph border latest-Update-column">
+            <h2 class="border padding-left">Daily Updates</h2>
+            <div id="selectBox" class="padding-left">
+              <select name="typeSelector" id="typeSelector" class="margin margin-left">
+                <option value="Confirmed">Total cases</option>
+                <option value="Deaths">Deaths</option>
+              </select>
+              <select name="stateSelector" id="stateSelector" class="margin">
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Virginia">Virginia</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
+              </select>
+              <select name="rangeSelector" id="rangeSelector" class="margin">
+                <option value="7">1 week</option>
+                <option value="14">2 weeks</option>
+              </select>
+            </div>
+            <div id="chartContainer" style="height: 350px; width: 100%;"></div>
+          </div>
 
           <div class="latest-Update-column">
-            <p class="case_time"> Updated August 8, 2020, 3:56 P.M. E.T. </p>
+            <p id="case_time"> Updated August 8, 2020, 3:56 P.M. E.T. </p>
             <div class="cases_update">
               <div class="case_container">
                 <div class="case">
                   <p>U.S. TOTAL CASES </p>
-                  <h2>4, 920, 369</h2>
+                  <p id="total_cases">4, 920, 369</p>
                 </div>
 
                 <div class="case">
                   <p>U.S. TOTAL DEATHS</p>
-                  <h2> 160, 220 </h2>
+                  <p id="total_death"> 160, 220 </p>
                 </div>
               </div>
             </div>
             <form class="email_update" id="email_form">
               <div class="email_update_content">
                 <p><i class="fas fa-envelope" aria-label="email"></i>&nbsp;&nbsp;&nbsp;Get Email Updates </p>
-                <label for="email">To receive email updates about COVID-19, enter your email address:</label><br><br>
-                <input type="email" id="email" name="email" placeholder="Email Address" class="email_input"><br><br>
+                <label for="emailInput">To receive email updates about COVID-19, enter your email address:</label><br><br>
+                <input type="email" id="emailInput" name="email" placeholder="Email Address" class="email_input" required><br><br>
+                <div class="invalid-feedback">Please provide a valid email</div>
                 <button type="submit" form="email_form" value="Submit" aria-label="send" class="submitbtn">Submit</button>
               </div>
             </form>
-
           </div>
         </div>
       </div>
-
+  
       <div class="keyResources_container">
         <h2>Resources and Information</h2>
         <div class="resources-row">
-
           <div class="resources_column">
             <div class="container1">
               <img src="img/covid-map.png" alt="image of a coronavirus cases map of the world">
@@ -406,7 +443,12 @@
     <footer>
       <div class="footer">
           &copy; | Created by Helen Zhao, Kenny Mai
-      </div>
+          <p>Data from <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports_us">https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports_us</a></p>
+          <p>Data from <a href="http://covidtracking.com/api/us">http://covidtracking.com/api/us</a></p>
+        </div>
     </footer>
+    <!-- <script src="js/canvasjs.min.js"></script> -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

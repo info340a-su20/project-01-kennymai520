@@ -252,7 +252,7 @@ text-decoration: none;
   height: 30px;
   width: 90%;
 }
-.case_time {
+#case_time {
   color: red;
   font-weight: bold;
   margin-left: 2.0rem;
@@ -268,6 +268,11 @@ text-decoration: none;
 }
 .case {
   margin-left: 2.2rem;
+}
+
+#total_cases, #total_death {
+  font-size: 2em;
+  font-weight: 500;
 }
 
 .footer {
@@ -354,6 +359,20 @@ text-decoration: none;
   }
 }
 
+@media (min-width: 380px) {
+  .margin {
+    margin-right: 0.5rem;
+  }
+  
+  .margin-left {
+    margin-left: 1rem;
+  }
+
+  .padding-left {
+    padding-left: 1rem;
+  }
+}
+
 @media (max-width: 991px) {
   div.searchBox {
     width: 200px;
@@ -370,10 +389,27 @@ text-decoration: none;
     align-content: center;
     width: 100%;
   }
+
+  .no_marigin {
+    padding: 2em;
+    margin: 2em;
+  }
+
+  .padding-left {
+    padding-left: 2em;
+  }
 }
 
 @media (min-width: 1140px) {
   .news-section {
     margin: 0 200px;
   }
+}
+
+.no_marigin {
+  padding: 0;
+}
+
+.padding-left {
+  padding-left: 0;
 }
