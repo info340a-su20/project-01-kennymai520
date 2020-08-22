@@ -5,7 +5,7 @@ let givenRange = '7';
 let givenType = 'Confirmed';
 
 let URL =  "https://thevirustracker.com/free-api?countryTimeline=US";
-let URL2 = "http://covidtracking.com/api/us"
+let URL2 = "https://covidtracking.com/api/us"
 
 let result = fetch(URL2)
 .then(function(response) {
