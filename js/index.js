@@ -4,7 +4,7 @@ let givenState = 'Alabama';
 let givenRange = '7';
 let givenType = 'Confirmed';
 
-let URL2 = "http://covidtracking.com/api/us"
+let URL2 = "https://covidtracking.com/api/us"
 
 fetch(URL2)
 .then(function(response) {
