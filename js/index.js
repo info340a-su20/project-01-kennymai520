@@ -9,10 +9,15 @@ function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+//storing email for sending update newes later
+let email = [];
+
 // alert user that email is being received.
 let form = document.querySelector('#email_form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
+  let input = document.querySelector('input#emailInput').value;
+  email.push(input);
   window.alert("You will be receiving Covid-19 news update");
   form.reset();
 });
