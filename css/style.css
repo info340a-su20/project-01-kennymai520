@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+
+section {
+  padding-top: 65px;
+}
+
 .menu-link{
   color: white;
 }

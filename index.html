@@ -16,7 +16,7 @@
       <!-- <script type="text/javascript" src="canvasjs.min.js"></script> -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
       <!-- Polyfill for fetch -->
@@ -30,7 +30,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand " href="#"><div class="logo" aria-hidden="true">&nbsp;</div></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -94,7 +94,7 @@
       <div class="latest-Update-container no_marigin">
         <div class="latest-Update-row border">
           <div class="graph border latest-Update-column">
-            <h2 class="border padding-left">Daily Updates</h2>
+            <h2 class="border padding-left" id="daily_update">Daily Updates</h2>
             <div id="selectBox" class="padding-left">
               <select name="typeSelector" id="typeSelector" class="margin margin-left">
                 <option value="Confirmed">Total cases</option>

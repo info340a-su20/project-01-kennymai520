@@ -6,7 +6,7 @@ let givenType = 'Confirmed';
 
 let URL2 = "https://covidtracking.com/api/us";
 
-fetch(URL2)
+fetch(URL2, 'no-CORS')
 .then(function(response) {
   return response.json();
 }).then (function(data) {
@@ -49,7 +49,8 @@ function fetchData(stateName, typeName, range) {
       }
       dataPoints.push(components);
     });
-    window.onload(dataPoints, givenState);
+    let chart = window.onload(dataPoints, givenState);
+    chart.render();
     // console.log(dataPoints);
   })
 }
@@ -71,24 +72,28 @@ function fetchData(stateName, typeName, range) {
 // }
 
 window.onload = function (inputs, statename) {
-  let datas = [];
-  for (let i = 0; i < inputs.length; i++) {
-    datas.push({x: inputs[i].date, y: inputs[i].count});
+  window.document.body.onload = makeGraph;
+  function makeGraph (inputs, statename) {
+    let datas = [];
+    for (let i = 0; i < inputs.length; i++) {
+      datas.push({x: inputs[i].date, y: inputs[i].count});
+    }
+    // console.log(datas);
+    let chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: true,
+      theme: "light2",
+      title:{
+        text: "Daily Updates in " + statename
+      },
+      data: [{        
+        type: "line",
+        indexLabelFontSize: 16,
+        dataPoints: datas
+      }]
+    });
+    console.log("Graph rendered");
+    return chart;
   }
-  // console.log(datas);
-  let chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    theme: "light2",
-    title:{
-      text: "Daily Updates in " + statename
-    },
-    data: [{        
-      type: "line",
-      indexLabelFontSize: 16,
-      dataPoints: datas
-    }]
-  });
-  chart.render();
 }
 
 let selectState = document.querySelector('#stateSelector');
