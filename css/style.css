@@ -151,6 +151,11 @@ text-decoration: none;
   text-decoration: none;
 }
 
+.latest-Update-row {
+  z-index: 1000;
+  background-color: white;
+}
+
 .latest-Update-container {
   padding: 2rem;
   display: flex;
