@@ -92,30 +92,40 @@
       </div>
 
       <div class="latest-Update-container no_marigin">
-        <div class="latest-Update-row border">
-          <div class="graph border latest-Update-column">
-            <h2 class="border padding-left" id="daily_update">Daily Updates</h2>
-            <div id="selectBox" class="padding-left">
-              <select name="typeSelector" id="typeSelector" class="margin margin-left">
-                <option value="Confirmed">Total cases</option>
-                <option value="Deaths">Deaths</option>
-              </select>
-              <select name="stateSelector" id="stateSelector" class="margin">
-                <option value="Alabama">Alabama</option>
-                <option value="Alaska">Alaska</option>
-                <option value="Arizona">Arizona</option>
-                <option value="Virginia">Virginia</option>
-                <option value="Washington">Washington</option>
-                <option value="West Virginia">West Virginia</option>
-                <option value="Wisconsin">Wisconsin</option>
-                <option value="Wyoming">Wyoming</option>
-              </select>
-              <select name="rangeSelector" id="rangeSelector" class="margin">
-                <option value="7">1 week</option>
-                <option value="14">2 weeks</option>
-              </select>
+        <div class="latest-Update-row border" id="bootstrap-overrides">
+          <div class="graph latest-Update-column">
+            <div>
+              <h2 class="padding-left align-middle heading_component" id="daily_update">Daily Updates</h2>
+              <button type="button" class="btn btn-primary align-baseline heading_component" id="display_graph">Display Graph</button>
+              <button type="button" class="btn btn-info align-baseline heading_component" id="display_table">Display Table</button>
             </div>
-            <div id="chartContainer"></div>
+            <div id="graph_container">
+              <div id="selectBox" class="padding-left">
+                <label class="hide_it" for="typeSelector">Choose cases:</label>
+                <select name="typeSelector" id="typeSelector" class="margin margin-left">
+                  <option value="Confirmed">Total cases</option>
+                  <option value="Deaths">Deaths</option>
+                </select>
+                <label class="hide_it" for="stateSelector">Choose state:</label>
+                <select name="stateSelector" id="stateSelector" class="margin">
+                  <option value="Alabama">Alabama</option>
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Virginia">Virginia</option>
+                  <option value="Washington">Washington</option>
+                  <option value="West Virginia">West Virginia</option>
+                  <option value="Wisconsin">Wisconsin</option>
+                  <option value="Wyoming">Wyoming</option>
+                </select>
+                <label class="hide_it" for="rangeSelector">Choose range: </label>
+                <select name="rangeSelector" id="rangeSelector" class="margin">
+                  <option value="7">1 week</option>
+                  <option value="14">2 weeks</option>
+                </select>
+              </div>
+              <div id="chartContainer"></div>
+            </div>
+            <table id="table_container" class="table"></table>
           </div>
 
           <div class="latest-Update-column">

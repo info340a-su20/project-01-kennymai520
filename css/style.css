@@ -48,9 +48,11 @@ h1 {
   text-align:LEFT;
   text-decoration: underline solid black;
 }
-.borderss{
-  border: solid;
+
+.borders{
+  border: solid 1px gray;
 }
+
 #latest-update-title {
   margin-left: 10px;
 }
@@ -333,7 +335,6 @@ text-decoration: none;
 .no-padding {
   padding: 0;
 }
-
 .no-margin{
   margin: 0;
 }
@@ -352,6 +353,14 @@ text-decoration: none;
   margin: 0 auto;
   width: 100%;
   height: 130%;
+}
+
+.heading_component {
+  margin-right: 10px;
+}
+
+#daily_update {
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
@@ -376,6 +385,25 @@ text-decoration: none;
   .padding-left {
     padding-left: 1rem;
   }
+}
+
+.hide_it {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  #daily_update {
+    display: block;
+  }
+
+  .heading_component {
+    margin-bottom: 5px;
+  }
+  
+  .border {
+    border: none !important;
+  }
+
 }
 
 @media (max-width: 991px) {
