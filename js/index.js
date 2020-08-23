@@ -6,7 +6,7 @@ let givenType = 'Confirmed';
 
 let URL2 = "https://covidtracking.com/api/us";
 
-fetch(URL2, 'no-CORS')
+fetch(URL2)
 .then(function(response) {
   return response.json();
 }).then (function(data) {
@@ -49,8 +49,7 @@ function fetchData(stateName, typeName, range) {
       }
       dataPoints.push(components);
     });
-    let chart = window.onload(dataPoints, givenState);
-    chart.render();
+    window.onload(dataPoints, givenState).render();
     // console.log(dataPoints);
   })
 }
